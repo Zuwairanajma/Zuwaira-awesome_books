@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Thierry's Book</title>
+</head>
+<body>
+  <header class="nav-header">
+    <nav class="navbar">
+        <div class="nav-title">
+            <h2>Awesome Books</h2>
+        </div>
+        <div class="main-menu">
+            <ul>
+                <li class="object-name"><a href='#books'>List</a></li>
+                <li class="object-name"><a href='#add-book'>Add new</a></li>
+                <li class="object-name"><a href="#info">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+   <div class="currentDate">July 1 2023 12:30:00</div> 
+</header>
+
+  <div><h1>All awesome books</h1></div>
+  <div class="list-div" id="list-div">
+  <section id="books" class="content-li"></section>
+    <div id="bookContainer" class="book-container"></div>
+  </section>
+</div>
+  <section id="add-book" class="content">
+    <h1>Add Book</h1>
+    <!-- Add book form content -->
+    <form id="addBookForm">
+      <div class="text-box">
+        <input type="text" id="titleInput" required>
+        <label>Title</label>
+      </div>
+      <div class="text-box">
+        <input type="text" id="authorInput" required>
+        <label>Author</label>
+      </div>
+      <div>
+        <button type="submit" class="add-button">
+          Add
+        </button>
+      </div>
+    </form>
+  </section>
+    <section id="info" class="section">
+      <h2>Contact Information</h2>
+      <p>For inquiries or assistance, please contact us:</p>
+      <ul>
+        <li>Email: example@example.com</li>
+        <li>Phone: 123-456-7890</li>
+        <li>Address: Streetname 22, 84503 City, Country</li>
+      </ul>
+    </section>
+    <!-- Footer content -->
+    <footer>
+      <div class="footer-section">
+      <p>&copy; 2023 Book Collection. All rights reserved.</p>
+      </div>
+    </footer>
+ <script src="script.js"></script>
+</body>
+</html>

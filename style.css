@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.text-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.text-box input {
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid #121111;
+  width: 70%;
+}
+
+.text-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px;
+  font-size: 16px;
+  color: #555;
+  pointer-events: none;
+  transition: 0.2s ease-out;
+}
+
+form {
+  margin-left: 300px;
+  padding: 35px;
+  margin-top: 30px;
+}
+
+.text-box input:focus ~ label,
+.text-box input:valid ~ label {
+  top: -25px;
+  left: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.book {
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.book:nth-child(even) {
+  background-color: #fff;
+}
+
+#books {
+  margin-top: 20px;
+  text-align: center;
+  border: 2px solid #ff6347;
+  width: 100%;
+}
+
+.footer-section {
+  margin-top: 350px;
+  text-align: center;
+  border: 2px solid #121111;
+  width: 100%;
+  line-height: 40px;
+  display: block;
+}
+
+#books .text-box {
+  margin-bottom: 10px;
+}
+
+#bookContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-title {
+  font-weight: bold;
+}
+
+.book-author {
+  color: #555;
+  margin-left: -450px;
+}
+
+.section {
+  /* display: flex; */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-left: 500px;
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+.section p {
+  margin-top: 30px;
+}
+
+.section ul {
+  margin-top: 30px;
+}
+
+.content {
+  display: none;
+}
+
+.remove-button {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #cc4338;
+}
+
+.add-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 550px;
+}
+
+.nav-header {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 100%;
+}
+
+.navbar {
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 10px;
+  width: 100%;
+}
+
+.navbar .main-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  padding: 2px;
+}
+
+.main-menu ul li {
+  padding: 10px;
+}
+
+a:link {
+  color: #000;
+  text-decoration: none;
+}
